@@ -8,19 +8,41 @@
     <title>Encriptador de texto</title>
 </head>
 <body>
-    <div class="container">
-        <section class="inputBox">
-            <textarea name="textInput" class="textInput" id="textInput" cols="30" rows="10"></textarea>
-            <div class="botonera">
-                <input type="button" class="primaryBtn" value="Encriptar">
-                <input type="button" class="secondaryBtn" value="Desencriptar">
-            </div>
-        </section>
-        <section class="outputBox">
-            <div class="result"></div>
-            <input type="button" class="secondaryBtn" value="Copiar">
-        </section>
+    <div class="generalContainer">
+        <header class="logo">
+            <img src="sources\img\Vector.svg" alt="Alura">
+        </header>
+        <div class="containerWeb">
+            
+            <section class="inputBox">
+                <textarea name="input" id="" cols="30" rows="8"
+                placeholder="Ingrese el texto aqui"></textarea>
+                <div class="botonera">
+                    <div class="aviso">
+                        <img src="sources/img/atention.svg" alt="atencion">
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <input type="button" class="primary btn" value="Encriptar">
+                    <input type="button" class="secondary btn" value="Desencriptar">
+                </div>
+            </section>
+            <section class="outputBox">
+                <div class="emptyMsg">
+                    <img src="sources/img/Muneco.svg" alt="Sin mensaje">
+                    <strong>Ningún mensaje fue encontrado</strong>
+                    <p>Ingresa el texto que desees encriptar o desencriptar.</p> 
+                </div>
+                <div class="msg">
+                    <div class="result"></div>
+                    <div class="botonera">
+                        <input type="button" class="secondaryBtn" value="Copiar">
+                    </div>
+                </div>
+                
+            </section>
+        </div>
     </div>
+    
     <script src="js/app.js"></script>
 </body>
 </html>
