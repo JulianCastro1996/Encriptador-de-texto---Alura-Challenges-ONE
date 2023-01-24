@@ -57,5 +57,9 @@ function desencriptarAction(){
         result.innerHTML= resultado;
         textarea.value="";
     }
+}
+function copyOnClipBoard(){
+    navigator.clipboard.writeText(result.innerHTML)
+    alert("copiado!!");
 
 }
