@@ -15,27 +15,27 @@
         <div class="containerWeb">
             
             <section class="inputBox">
-                <textarea name="input" id="" cols="30" rows="8"
+                <textarea name="input" id="textarea" cols="30" rows="8"
                 placeholder="Ingrese el texto aqui"></textarea>
                 <div class="botonera">
                     <div class="aviso">
                         <img src="sources/img/atention.svg" alt="atencion">
                         <p>Solo letras minúsculas y sin acentos</p>
                     </div>
-                    <input type="button" class="primary btn" value="Encriptar">
-                    <input type="button" class="secondary btn" value="Desencriptar">
+                    <input type="button" onclick="encriptarAction()" class="primary btn" id="encriptar" value="Encriptar">
+                    <input type="button" onclick="desencriptarAction()" class="secondary btn" id="desencriptar" value="Desencriptar">
                 </div>
             </section>
             <section class="outputBox">
-                <div class="emptyMsg">
+                <div class="emptyMsg" id="emptyMsg">
                     <img src="sources/img/Muneco.svg" alt="Sin mensaje">
                     <strong>Ningún mensaje fue encontrado</strong>
                     <p>Ingresa el texto que desees encriptar o desencriptar.</p> 
                 </div>
-                <div class="msg">
-                    <div class="result"></div>
+                <div class="msg none" id="msg">
+                    <p class="result" id="result"></p>
                     <div class="botonera">
-                        <input type="button" class="secondaryBtn" value="Copiar">
+                        <input type="button" class="secondary btn" value="Copiar">
                     </div>
                 </div>
                 
